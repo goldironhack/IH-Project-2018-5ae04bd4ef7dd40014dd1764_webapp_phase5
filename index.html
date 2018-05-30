@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>webapp_phase5</title>
+
 </head>
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAni7TlRMcvD9xLnsKHHiFmhabPSbExXf0&callback=initMap" type="text/javascript"></script>
+		<script src="https://catalog.data.gov/dataset/neighborhood-names-gis?q=myname"></script>
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+	<div id="wrapper" class="wrapper">
+
+		<div id="header" class="header">
+		<div class="logo"><a href="">
+			<img src="http://www.stern.nyu.edu/sites/all/themes/stern/images/logo.nyu-stern.450.png" alt="">
+			<div id="logoSvg" style="display: none;"></div>
+		</a></div> </div>	
+	<h3>Please input your information to find the best position.</h3>
+
+	<div class="content" id="content" style="height: 530px;">
+	<div class="choice">
+	<ul class="menu" style="list-style: none;margin:0">
+    <li class="item"><a href="#">Price <input type="number"><span class="up"></span><span class="down"></span></a></li>
+    <li class="item"><a href="#">Safety <input type="number"><span class="up"></span><span class="down"></span></a></li>
+    <li class="item"><a href="#">Distance <input type="number"><span class="up"></span><span class="down"></span></a></li>
+    </ul>
+	</div>
+			<div class="search"> <button>click</button> </div>	
+		    <div id="map"></div>
+
+	</div>
+
+	</div>
+<script></script>
+
 </body>
 </html>
